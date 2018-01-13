@@ -7,7 +7,8 @@ var flow = require('gulp-flowtype');
 var outputPath = path.join(__dirname, 'build', 'out');
 
 function build() {
-  return gulp.src(path.join(__dirname, 'src', '**/*.js'))
+  return gulp
+    .src(path.join(__dirname, 'src', '**/*.js'))
     .pipe(eslint())
     .pipe(flow())
     .pipe(babel())
