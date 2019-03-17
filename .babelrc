@@ -1,9 +1,9 @@
 {
   "presets": [
-    "flow", 
-    "env"
+    "@babel/preset-flow", 
+    "@babel/preset-env"
   ],
   "plugins": [
-    "transform-class-properties"
+    "@babel/plugin-proposal-class-properties"
   ]
 }
