@@ -1,15 +1,17 @@
 {
   "extends": [
     "airbnb-base",
-    "plugin:flowtype/recommended",
-    "plugin:prettier/recommended"
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
-  "parser": "babel-eslint",
-  "plugins": [
-    "flowtype",
-    "prettier"
-  ],
-  "env": {
-    "es6": true
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion":  2018,
+    "sourceType":  "module"
+  },
+  "rules": {
+    "indent": "off",
+    "@typescript-eslint/indent": ["error", 2]
   }
 }

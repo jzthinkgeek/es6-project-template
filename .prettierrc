@@ -1,5 +1,4 @@
 {
-  "printWidth": 100,
-  "parser": "flow",
-  "singleQuote": true
+  "singleQuote": true,
+  "printWidth": 100
 }

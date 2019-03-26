@@ -1,18 +1,17 @@
-var gulp = require('gulp');
-var path = require('path');
-var babel = require('gulp-babel');
-var eslint = require('gulp-eslint');
-var flow = require('gulp-flowtype');
-var clean = require('gulp-clean');
+const gulp = require('gulp');
+const path = require('path');
+const eslint = require('gulp-eslint');
+const ts = require('gulp-typescript');
+const clean = require('gulp-clean');
 
-var outputPath = path.join(__dirname, 'build', 'out');
+const tsProject = ts.createProject('tsconfig.json');
+const outputPath = path.join(__dirname, 'build', 'out');
 
 function build() {
-  return gulp
-    .src(path.join(__dirname, 'src', '**/*.js'))
+  return tsProject
+    .src()
     .pipe(eslint())
-    .pipe(flow())
-    .pipe(babel())
+    .pipe(tsProject())
     .pipe(gulp.dest(outputPath));
 }
 

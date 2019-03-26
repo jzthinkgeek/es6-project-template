@@ -22,23 +22,18 @@
   },
   "homepage": "https://github.com/jzthinkgeek/es6-project-template#readme",
   "dependencies": {
-    "flow-bin": "^0.95.1",
-    "@babel/core": "^7.3.4",
-    "babel-eslint": "^10.0.1",
-    "@babel/preset-env": "^7.3.4",
-    "@babel/preset-flow": "^7.0.0",
-    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@typescript-eslint/eslint-plugin": "^1.5.0",
+    "@typescript-eslint/parser": "^1.5.0",
     "eslint": "^5.15.2",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-flowtype": "^3.4.2",
     "gulp": "^4.0.0",
-    "gulp-babel": "^8.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-eslint": "^5.0.0",
-    "gulp-flowtype": "1.0.0",
-    "prettier": "1.16.4"
+    "gulp-typescript": "^5.0.1",
+    "prettier": "1.16.4",
+    "typescript": "^3.3.4000"
   }
 }
